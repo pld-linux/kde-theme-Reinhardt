@@ -50,6 +50,7 @@ Summary:	KDE style - %{_theme}
 Summary(pl):	Styl do KDE - %{_theme}
 Group:		Themes
 Requires:	kdelibs
+Obsoletes:	kde-style-slicker
 
 %description -n kde-style-%{_theme}
 %{_theme} is a slicker style that was designed to look nice with
@@ -66,6 +67,7 @@ Summary:	KDE style - %{_theme}
 Summary(pl):	Styl do KDE - %{_theme}
 Group:		Themes
 Requires:	kdelibs
+Obsoletes:	kde-icons-slicker
 
 %description -n kde-icons-%{_theme}
 %{_theme} is a slicker icons theme that was designed to look nice with
@@ -81,11 +83,10 @@ Group:          Themes
 Requires:       kdebase-core
 
 %description -n kde-colorscheme-%{_theme}
-Color scheme for KDE style - %{_theme}
+Color scheme for KDE style - %{_theme}.
 
 %description -n kde-colorscheme-%{_theme} -l pl
-Schemat kolorów do stylu KDE - %{_theme}
-
+Schemat kolorów do stylu KDE - %{_theme}.
 
 %package -n kde-wallpaper-%{_theme}
 Summary:	KDE wallpaper - %{_theme}
@@ -93,6 +94,7 @@ Summary(pl):	Tapeta do KDE - %{_theme}
 Group:		Themes
 # Contains /usr/share/wallpapers
 Requires:	kdebase
+Obsoletes:	kde-wallpaper-slicker
 
 %description -n kde-wallpaper-%{_theme}
 A wallpaper to go with KDE slicker style.
@@ -107,11 +109,10 @@ Group:          X11/Amusements
 Requires:       %{name}-desktop = %{epoch}:%{version}-%{release}
 
 %description -n kde-splashplugin-%{_theme}
-ksplash plugin %{_theme}
+ksplash plugin %{_theme}.
 
 %description -n kde-splashplugin-%{_theme} -l pl
-Wtyczka ksplash %{_theme}
-
+Wtyczka ksplash %{_theme}.
 
 %prep
 %setup -q -n %{_theme}style-%{version}
@@ -131,25 +132,24 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_iconsdir}
 install -d $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes
 install -d $RPM_BUILD_ROOT%{_datadir}/wallpapers
-install -d $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
+install -d $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/wallpapers
 
-%{__tar} xfj  %{SOURCE2} -C $RPM_BUILD_ROOT%{_iconsdir}
+tar xjf %{SOURCE2} -C $RPM_BUILD_ROOT%{_iconsdir}
 
-install %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
+install %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes
 rm -rf tmp
 mkdir tmp
-%{__tar} xfj  %{SOURCE4} -C ./tmp
-%{__tar} xfj ./tmp/slickersplash-0.1/Slicker.tar.bz2 -C $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/
-cp -f ./tmp/slickersplash-0.1/splash.png  $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/Slicker/
-cp -f ./tmp/slickersplash-0.1/login_bg.jpg $RPM_BUILD_ROOT%{_datadir}/wallpapers/
+tar xjf %{SOURCE4} -C tmp
+tar xjf tmp/slickersplash-0.1/Slicker.tar.bz2 -C $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes
+cp -f tmp/slickersplash-0.1/splash.png  $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/Slicker
+cp -f tmp/slickersplash-0.1/login_bg.jpg $RPM_BUILD_ROOT%{_datadir}/wallpapers
 
-
-install %{SOURCE5} $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
-
+install %{SOURCE5} $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -162,7 +162,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n kde-splashplugin-%{_theme}
 %defattr(644,root,root,755)
-%{_datadir}/apps/ksplash/Themes/
+%{_datadir}/apps/ksplash/Themes/*
 
 %files -n kde-colorscheme-%{_theme}
 %defattr(644,root,root,755)
@@ -174,4 +174,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n kde-icons-%{_theme}
 %defattr(644,root,root,755)
-%{_iconsdir}/
+%{_iconsdir}/*
