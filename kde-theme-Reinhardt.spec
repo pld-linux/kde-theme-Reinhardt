@@ -13,7 +13,7 @@ Source0:	http://www.kde-look.org/content/files/5962-%{_theme}style-%{version}.ta
 # Source0-md5:	eb8198b851621ae173f16e18cb7a7403
 Source1:	slickerwallpaper.png
 Source2:	http://slicker.sourceforge.net/%{_theme}icons-%{_icons_ver}.tar.bz2
-# Source2-md5:	98a87759a5ac58621c1e20a8c3ef0f30
+# Source2-md5:	46ae3960082f392803acbedce05ff1e1
 Source3:	http://www.kde-look.org/content/files/9399-myreinhart.kcsrc
 # Source3-md5:	9df54d0b9137e59bea3339ee096e77d5
 Source4:	http://www.kde-look.org/content/files/7021-slickersplash-0.1.tar.bz2
