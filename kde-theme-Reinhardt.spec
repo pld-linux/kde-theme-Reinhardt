@@ -238,9 +238,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n kde-icons-%{_theme}
 %defattr(644,root,root,755)
-%{_datadir}/gdm/themes/%{_theme}
-
+%{_iconsdir}/*
 
 %files -n gdm-theme-%{_theme}
 %defattr(644,root,root,755)
-%{_iconsdir}/*
+%{_datadir}/gdm/themes/%{_theme}
