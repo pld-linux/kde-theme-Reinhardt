@@ -1,6 +1,6 @@
 %define		_theme 	reinhardt
 %define		_theme_ver 0.6.3
-%define         _icons_ver 0.8
+%define         _icons_ver 0.9
 %define         _splash_ver 0.1
 %define         _gdm_ver 0.2
 
@@ -14,8 +14,8 @@ Group:		Themes
 Source0:	http://www.kde-look.org/content/files/5962-%{_theme}style-%{version}.tar.bz2
 # Source0-md5:	65dcd0ba30ee19aa630c3ee3dc25b31b
 Source1:	slickerwallpaper.png
-Source2:	http://slicker.sourceforge.net/%{_theme}icons-%{_icons_ver}.tar.bz2
-# Source2-md5:	87e9868e5150efa991d42224bc6235d1
+Source2:	http://slicker.sourceforge.net/%{_theme}icons-%{_icons_ver}-svg.tar.bz2
+# Source2-md5:	e34ac71369898d76d289032c8c4d3dca
 Source3:	http://www.kde-look.org/content/files/9399-myreinhart.kcsrc
 # Source3-md5:	9df54d0b9137e59bea3339ee096e77d5
 Source4:	http://www.kde-look.org/content/files/7021-slickersplash-0.1.tar.bz2
