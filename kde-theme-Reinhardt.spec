@@ -1,6 +1,6 @@
-%define		_theme 	reinhardt
-%define		_theme_ver 0.6.1
-%define         _icons_ver 0.7
+%define		_theme		reinhardt
+%define		_theme_ver	0.6.1
+%define		_icons_ver	0.7
 
 Summary:	KDE theme - %{_theme}
 Summary(pl):	Motyw KDE - %{_theme}
@@ -33,7 +33,7 @@ BuildRequires:	freetype-devel
 BuildRequires:	kdelibs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _htmldir        %{_docdir}/kde/HTML
+%define		_htmldir	%{_docdir}/kde/HTML
 
 %description
 %{_theme} is a slicker theme that was designed to look nice with
@@ -77,10 +77,10 @@ slicker style.
 %{_theme} to motyw ikon stworzony by wspó³gra³ ze stylem slicker.
 
 %package -n kde-colorscheme-%{_theme}
-Summary:        Color scheme for KDE style - %{_theme}
-Summary(pl):    Schemat kolorów do stylu KDE - %{_theme}
-Group:          Themes
-Requires:       kdebase-core
+Summary:	Color scheme for KDE style - %{_theme}
+Summary(pl):	Schemat kolorów do stylu KDE - %{_theme}
+Group:		Themes
+Requires:	kdebase-core
 
 %description -n kde-colorscheme-%{_theme}
 Color scheme for KDE style - %{_theme}.
@@ -103,10 +103,10 @@ A wallpaper to go with KDE slicker style.
 Tapeta pasuj±ca do stylu KDE slicker.
 
 %package -n kde-splashplugin-%{_theme}
-Summary:        ksplash plugin %{_theme}
-Summary(pl):    Wtyczka ksplash %{_theme}
-Group:          X11/Amusements
-Requires:       %{name}-desktop = %{epoch}:%{version}-%{release}
+Summary:	ksplash plugin %{_theme}
+Summary(pl):	Wtyczka ksplash %{_theme}
+Group:		X11/Amusements
+Requires:	%{name}-desktop = %{epoch}:%{version}-%{release}
 
 %description -n kde-splashplugin-%{_theme}
 ksplash plugin %{_theme}.
@@ -146,7 +146,7 @@ rm -rf tmp
 mkdir tmp
 tar xjf %{SOURCE4} -C tmp
 tar xjf tmp/slickersplash-0.1/Slicker.tar.bz2 -C $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes
-cp -f tmp/slickersplash-0.1/splash.png  $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/Slicker
+cp -f tmp/slickersplash-0.1/splash.png $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/Slicker
 cp -f tmp/slickersplash-0.1/login_bg.jpg $RPM_BUILD_ROOT%{_datadir}/wallpapers
 
 install %{SOURCE5} $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes
