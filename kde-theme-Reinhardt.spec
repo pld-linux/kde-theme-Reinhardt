@@ -5,7 +5,7 @@
 %define         _gdm_ver 0.2
 
 Summary:	KDE theme - %{_theme}
-Summary(pl):	Motyw KDE - %{_theme}
+Summary(pl.UTF-8):   Motyw KDE - %{_theme}
 Name:		kde-theme-%{_theme}
 Version:	%{_theme_ver}
 Release:	1
@@ -44,14 +44,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 slicker. To developer's surprise, this style looks good even without
 slicker.
 
-%description -l pl
-%{_theme} to motyw stworzony by wspó³gra³ z aplikacj± slicker. Ku
-zaskoczeniu twórców, styl ten jednak okaza³ siê piêknie wygl±daæ nawet
+%description -l pl.UTF-8
+%{_theme} to motyw stworzony by wspÃ³Å‚graÅ‚ z aplikacjÄ… slicker. Ku
+zaskoczeniu twÃ³rcÃ³w, styl ten jednak okazaÅ‚ siÄ™ piÄ™knie wyglÄ…daÄ‡ nawet
 bez slickera.
 
 %package -n kde-style-%{_theme}
 Summary:	KDE style - %{_theme}
-Summary(pl):	Styl do KDE - %{_theme}
+Summary(pl.UTF-8):   Styl do KDE - %{_theme}
 Group:		Themes
 Url:		http://www.kde-look.org/content/show.php?content=5962
 Version:	%{_theme_ver}
@@ -63,13 +63,13 @@ Obsoletes:	kde-style-slicker
 A completely flat, minimalist style without 3D effects. Without losing
 speed and simplicity it acomplishes great usability.
 
-%description -n kde-style-%{_theme} -l pl
-Zupe³nie p³aski, minimalistyczny styl bez efektów 3D. Dziêki swojej
+%description -n kde-style-%{_theme} -l pl.UTF-8
+ZupeÅ‚nie pÅ‚aski, minimalistyczny styl bez efektÃ³w 3D. DziÄ™ki swojej
 prostocie jest szybki i bardzo funkcjonalny.
 
 %package -n kde-icons-%{_theme}
 Summary:	KDE style - %{_theme}
-Summary(pl):	Styl do KDE - %{_theme}
+Summary(pl.UTF-8):   Styl do KDE - %{_theme}
 Group:		Themes
 Version:	%{_icons_ver}
 Url:		http://www.kde-look.org/content/show.php?content=6153
@@ -80,12 +80,12 @@ Obsoletes:	kde-icons-slicker
 %description -n kde-icons-%{_theme}
 Flat, simple, icons with gray outlines.
 
-%description -n kde-icons-%{_theme} -l pl
-P³askie, prost ikony z szarymi obwódkami.
+%description -n kde-icons-%{_theme} -l pl.UTF-8
+PÅ‚askie, prost ikony z szarymi obwÃ³dkami.
 
 %package -n kde-colorscheme-my%{_theme}
 Summary:	Color scheme for KDE style - my%{_theme}
-Summary(pl):	Schemat kolorów do stylu KDE - my%{_theme}
+Summary(pl.UTF-8):   Schemat kolorÃ³w do stylu KDE - my%{_theme}
 Group:		Themes
 Requires:	kdebase-core
 License:	GPL
@@ -97,13 +97,13 @@ Conflicts:	kde-colorscheme-reinhardt < 1
 A color scheme with pale beige menu and window background and blue
 selection background.
 
-%description -n kde-colorscheme-my%{_theme} -l pl
-Schemat kolorów z wyblak³ym be¿owym t³em okna i menu oraz niebieskim
-t³em zaznaczenia.
+%description -n kde-colorscheme-my%{_theme} -l pl.UTF-8
+Schemat kolorÃ³w z wyblakÅ‚ym beÅ¼owym tÅ‚em okna i menu oraz niebieskim
+tÅ‚em zaznaczenia.
 
 %package -n kde-colorscheme-%{_theme}
 Summary:	Color scheme for KDE style - %{_theme}
-Summary(pl):	Schemat kolorów do stylu KDE - %{_theme}
+Summary(pl.UTF-8):   Schemat kolorÃ³w do stylu KDE - %{_theme}
 License:	Public Domain
 Version:	1
 Group:		Themes
@@ -114,13 +114,13 @@ Requires:	kdebase-core
 A color scheme with grey window/menu/selection background and pale
 pink list background.
 
-%description -n kde-colorscheme-%{_theme} -l pl
-Schemat kolorów z szarym t³em okna, menu i zaznaczenia oraz wyblak³ym
-ró¿owym t³em list rozwijanych.
+%description -n kde-colorscheme-%{_theme} -l pl.UTF-8
+Schemat kolorÃ³w z szarym tÅ‚em okna, menu i zaznaczenia oraz wyblakÅ‚ym
+rÃ³Å¼owym tÅ‚em list rozwijanych.
 
 %package -n kde-wallpaper-%{_theme}
 Summary:	KDE wallpaper - %{_theme}
-Summary(pl):	Tapeta do KDE - %{_theme}
+Summary(pl.UTF-8):   Tapeta do KDE - %{_theme}
 License:	GPL
 Group:		Themes
 # Contains /usr/share/wallpapers
@@ -132,13 +132,13 @@ Gray background with the Reinhardt style KDE logo in the bottom right
 corner and a gradiented gray/white login background for GNOME/KDE
 Display Managers.
 
-%description -n kde-wallpaper-%{_theme} -l pl
-Szare t³o z logiem KDE z motywu ikon Reinhardt w prawy dolnym rogu
-oraz ekran logowania do GDM/KDM z bia³o-szarym gradientem.
+%description -n kde-wallpaper-%{_theme} -l pl.UTF-8
+Szare tÅ‚o z logiem KDE z motywu ikon Reinhardt w prawy dolnym rogu
+oraz ekran logowania do GDM/KDM z biaÅ‚o-szarym gradientem.
 
 %package -n kde-splash-%{_theme}
 Summary:	Reinhardt splash screen
-Summary(pl):	Ekran startowy - Reinhardt
+Summary(pl.UTF-8):   Ekran startowy - Reinhardt
 License:	GPL
 Version:	%{_splash_ver}
 Group:		X11/Amusements
@@ -149,13 +149,13 @@ Requires:	kdebase-desktop
 A dark/violet grey gradiented splash screen with a KDE logo in the
 Reinhardt style.
 
-%description -n kde-splash-%{_theme} -l pl
-Ekran startowy z gradientem kolorów od ciemno-szarego do
+%description -n kde-splash-%{_theme} -l pl.UTF-8
+Ekran startowy z gradientem kolorÃ³w od ciemno-szarego do
 fioletowo-szarego, z logiem KDE w stylu Reinhardt.
 
 %package -n gdm-theme-%{_theme}
 Summary:	A Reinhardt theme for the GNOME Display Manager
-Summary(pl):	Motyw Reinhardt do GDM
+Summary(pl.UTF-8):   Motyw Reinhardt do GDM
 License:	LGPL
 Version:	%{_gdm_ver}
 Group:		Themes
@@ -165,8 +165,8 @@ Requires:	gdm
 %description -n gdm-theme-%{_theme}
 A simple,flat, grey and white GDM theme.
 
-%description -n gdm-theme-%{_theme} -l pl
-P³aski, prosty, bia³o-szary motyw do GDM.
+%description -n gdm-theme-%{_theme} -l pl.UTF-8
+PÅ‚aski, prosty, biaÅ‚o-szary motyw do GDM.
 
 %prep
 %setup -q -n %{_theme}style-%{_theme_ver}
