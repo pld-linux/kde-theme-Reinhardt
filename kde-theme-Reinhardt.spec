@@ -5,7 +5,7 @@
 %define         _gdm_ver 0.2
 
 Summary:	KDE theme - %{_theme}
-Summary(pl.UTF-8):   Motyw KDE - %{_theme}
+Summary(pl.UTF-8):	Motyw KDE - %{_theme}
 Name:		kde-theme-%{_theme}
 Version:	%{_theme_ver}
 Release:	1
@@ -51,7 +51,7 @@ bez slickera.
 
 %package -n kde-style-%{_theme}
 Summary:	KDE style - %{_theme}
-Summary(pl.UTF-8):   Styl do KDE - %{_theme}
+Summary(pl.UTF-8):	Styl do KDE - %{_theme}
 Group:		Themes
 Url:		http://www.kde-look.org/content/show.php?content=5962
 Version:	%{_theme_ver}
@@ -69,7 +69,7 @@ prostocie jest szybki i bardzo funkcjonalny.
 
 %package -n kde-icons-%{_theme}
 Summary:	KDE style - %{_theme}
-Summary(pl.UTF-8):   Styl do KDE - %{_theme}
+Summary(pl.UTF-8):	Styl do KDE - %{_theme}
 Group:		Themes
 Version:	%{_icons_ver}
 Url:		http://www.kde-look.org/content/show.php?content=6153
@@ -85,7 +85,7 @@ Płaskie, prost ikony z szarymi obwódkami.
 
 %package -n kde-colorscheme-my%{_theme}
 Summary:	Color scheme for KDE style - my%{_theme}
-Summary(pl.UTF-8):   Schemat kolorów do stylu KDE - my%{_theme}
+Summary(pl.UTF-8):	Schemat kolorów do stylu KDE - my%{_theme}
 Group:		Themes
 Requires:	kdebase-core
 License:	GPL
@@ -103,7 +103,7 @@ tłem zaznaczenia.
 
 %package -n kde-colorscheme-%{_theme}
 Summary:	Color scheme for KDE style - %{_theme}
-Summary(pl.UTF-8):   Schemat kolorów do stylu KDE - %{_theme}
+Summary(pl.UTF-8):	Schemat kolorów do stylu KDE - %{_theme}
 License:	Public Domain
 Version:	1
 Group:		Themes
@@ -120,7 +120,7 @@ różowym tłem list rozwijanych.
 
 %package -n kde-wallpaper-%{_theme}
 Summary:	KDE wallpaper - %{_theme}
-Summary(pl.UTF-8):   Tapeta do KDE - %{_theme}
+Summary(pl.UTF-8):	Tapeta do KDE - %{_theme}
 License:	GPL
 Group:		Themes
 # Contains /usr/share/wallpapers
@@ -138,7 +138,7 @@ oraz ekran logowania do GDM/KDM z biało-szarym gradientem.
 
 %package -n kde-splash-%{_theme}
 Summary:	Reinhardt splash screen
-Summary(pl.UTF-8):   Ekran startowy - Reinhardt
+Summary(pl.UTF-8):	Ekran startowy - Reinhardt
 License:	GPL
 Version:	%{_splash_ver}
 Group:		X11/Amusements
@@ -155,7 +155,7 @@ fioletowo-szarego, z logiem KDE w stylu Reinhardt.
 
 %package -n gdm-theme-%{_theme}
 Summary:	A Reinhardt theme for the GNOME Display Manager
-Summary(pl.UTF-8):   Motyw Reinhardt do GDM
+Summary(pl.UTF-8):	Motyw Reinhardt do GDM
 License:	LGPL
 Version:	%{_gdm_ver}
 Group:		Themes
