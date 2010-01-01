@@ -53,7 +53,7 @@ bez slickera.
 Summary:	KDE style - %{_theme}
 Summary(pl.UTF-8):	Styl do KDE - %{_theme}
 Group:		Themes
-Url:		http://www.kde-look.org/content/show.php?content=5962
+URL:		http://www.kde-look.org/content/show.php?content=5962
 Version:	%{_theme_ver}
 License:	GPL
 Requires:	kdelibs
@@ -72,7 +72,7 @@ Summary:	KDE style - %{_theme}
 Summary(pl.UTF-8):	Styl do KDE - %{_theme}
 Group:		Themes
 Version:	%{_icons_ver}
-Url:		http://www.kde-look.org/content/show.php?content=6153
+URL:		http://www.kde-look.org/content/show.php?content=6153
 License:	LGPL
 Requires:	kdelibs
 Obsoletes:	kde-icons-slicker
@@ -90,7 +90,7 @@ Group:		Themes
 Requires:	kdebase-core
 License:	GPL
 Version:	0.1
-Url:		http://www.kde-look.org/content/show.php?content=9399
+URL:		http://www.kde-look.org/content/show.php?content=9399
 Conflicts:	kde-colorscheme-reinhardt < 1
 
 %description -n kde-colorscheme-my%{_theme}
@@ -107,7 +107,7 @@ Summary(pl.UTF-8):	Schemat kolorów do stylu KDE - %{_theme}
 License:	Public Domain
 Version:	1
 Group:		Themes
-Url:		http://www.kde-look.org/content/show.php?content=9411
+URL:		http://www.kde-look.org/content/show.php?content=9411
 Requires:	kdebase-core
 
 %description -n kde-colorscheme-%{_theme}
@@ -142,7 +142,7 @@ Summary(pl.UTF-8):	Ekran startowy - Reinhardt
 License:	GPL
 Version:	%{_splash_ver}
 Group:		X11/Amusements
-Url:		http://www.kde-look.org/content/show.php?content=7021
+URL:		http://www.kde-look.org/content/show.php?content=7021
 Requires:	kdebase-desktop
 
 %description -n kde-splash-%{_theme}
