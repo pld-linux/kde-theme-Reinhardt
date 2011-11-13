@@ -25,6 +25,7 @@ Source5:	http://www.kde-look.org/content/files/9411-reinhardt.kcsrc
 Source6:	http://www.kde-look.org/content/files/9948-reinhardtgdm-0.2.tar.bz2
 # Source6-md5:	de2335b4802cc713f7f120591985cf63
 Patch0:		%{_theme}-admin.patch.bz2
+# Patch0-md5:   2e859dba905ca85bfbc01c4cec663bfc
 URL:		http://www.kde-look.org/content/show.php?content=5962
 # Also: http://www.kde-look.org/content/show.php?content=5993
 # Also: http://www.kde-look.org/content/show.php?content=6153
