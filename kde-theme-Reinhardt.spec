@@ -14,6 +14,7 @@ Group:		Themes
 Source0:	http://www.kde-look.org/content/files/5962-%{_theme}style-%{version}.tar.bz2
 # Source0-md5:	65dcd0ba30ee19aa630c3ee3dc25b31b
 Source1:	slickerwallpaper.png
+# Source1-md5:	32bc8097ddb6abfb5c042cb66952729a
 Source2:	http://slicker.sourceforge.net/%{_theme}icons-%{_icons_ver}-svg.tar.bz2
 # Source2-md5:	e34ac71369898d76d289032c8c4d3dca
 Source3:	http://www.kde-look.org/content/files/9399-myreinhart.kcsrc
