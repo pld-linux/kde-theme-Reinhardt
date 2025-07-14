@@ -172,7 +172,7 @@ Płaski, prosty, biało-szary motyw do GDM.
 
 %prep
 %setup -q -n %{_theme}style-%{_theme_ver}
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 cp -f %{_datadir}/automake/config.sub admin
